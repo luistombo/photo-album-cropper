@@ -18,8 +18,8 @@
     "vibrance": 1.12
   },
   "gemini": {
-    "enabled": true,
-    "mode": "always",
+    "enabled": false,
+    "mode": "fallback",
     "model": "gemini-3.5-flash",
     "min_confidence": 0.55,
     "max_retries": 2,
