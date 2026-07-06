@@ -1,0 +1,22 @@
+[project]
+name = "photo-album-cropper"
+version = "1.0.0"
+description = "CLI para detectar, enderezar, recortar y corregir fotos impresas fotografiadas en albumes."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "opencv-python>=4.9.0",
+    "Pillow>=10.0.0",
+    "numpy>=1.26.0",
+    "tqdm>=4.66.0",
+]
+
+[project.scripts]
+photo-album-cropper = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
